@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OLX</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="icon" type="image" href="fav-icon.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+  <!-- HEADER START-->
+  <div class="header">
+    <!-- LOGO SECTION START -->
+    <div class="logo-section mt-3">
+      <a><img src="logo (2).png" alt="logo" height="40px" class="logo"></a>
+      <a><img src="car-icon.png" alt="car-icon"><span>Motors</span></a>
+      <a><img src="property-icon.png" alt="property-icon"><span>Property</span></a>
+    </div>
+    <!-- LOGO SECTION END -->
+    <!-- INPUT SECTION START -->
+    <div class="input-section mt-3 mx-3">
+      <!--LOCATION DROPDOWN START -->
+      <div class="dropdown location-dropdown">
+        <input type="text" placeholder="Location or Compound">
+        <img src="location icon.png" alt="location-icon" height="25px" class="location-dropdown-img">
+        <button class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        </button>
+        <ul class="dropdown-menu">
+          <li><img src="current location icon.png" alt="current-location-icon" height="25px"><a class="dropdown-item"
+              href="#" style="color: blue;">Use current location</a></li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+          <li><img src="location icon.png" alt="location-icon" height="25px"><a class="dropdown-item" href="#">See ads
+              in all
+              Pakistan</a></li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+          <li><a class="dropdown-item disabled" href="#">CHOOSE REGION</a></li>
+          <li><img src="location icon.png" alt="location-icon" height="25px"><a class="dropdown-item" href="#">Azad
+              Kashmir,Pakistan</a></li>
+          <li><img src="location icon.png" alt="location-icon" height="25px"><a class="dropdown-item"
+              href="#">Balochistan,Pakistan</a></li>
+          <li><img src="location icon.png" alt="location-icon" height="25px"><a class="dropdown-item" href="#">Islamabad
+              Capital
+              Territory,Pakistan</a></li>
+          <li><img src="location icon.png" alt="location-icon" height="25px"><a class="dropdown-item" href="#">Khyber
+              Pakhtunkhwa,Pakistan</a></li>
+          <li><img src="location icon.png" alt="location-icon" height="25px"><a class="dropdown-item" href="#">Northern
+              Areas,Pakistan</a></li>
+          <li><img src="location icon.png" alt="location-icon" height="25px"><a class="dropdown-item"
+              href="#">Punjab,Pakistan</a>
+          </li>
+          <li><img src="location icon.png" alt="location-icon" height="25px"><a class="dropdown-item"
+              href="#">Sindh,Pakistan</a>
+          </li>
+        </ul>
+      </div>
+      <!--LOCATION DROPDOWN END -->
+      <!-- INPUT GROUP START  -->
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Find Cars , Mobile phones and more...">
+        <a><img src="search icon.png" alt="search-icon" class="input-group-text bg-black"></a>
+      </div>
+      <!-- INPUT GROUP END -->
+      <!-- BUTTONS START -->
+      <div class="buttons">
+        <button class="btn login-btn">Login</button>
+        <button class="btn sell-btn"><img src="addition icon.png" alt="addition-icon">SELL</button>
+      </div>
+      <!-- BUTTONS END -->
+    </div>
+    <!-- INPUT SECTION END -->
+    <hr />
+    <!-- NAV SECTION START -->
+    <div class="nav-section">
+      <!-- CATEGORIES DROPDOWN START -->
+      <div class="dropdown categories-dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          ALL CATEGORIES
+        </button>
+        <div class="dropdown-menu">
+          <div class="categories-dropdown-menu">
+            <ul id="mobile-category">
+              <li><a class="dropdown-item h6" href="#">Mobiles</a></li>
+              <li><a class="dropdown-item" href="#">Mobile Phones</a></li>
+              <li><a class="dropdown-item" href="#">Accessories</a></li>
+              <li><a class="dropdown-item" href="#">Smart Watches</a></li>
+              <li><a class="dropdown-item" href="#">Tablets</a></li>
+            </ul>
+
+
+            <ul class="bike-category">
+              <li><a class="dropdown-item h6" href="#">Bikes</a></li>
+              <li><a class="dropdown-item" href="#">Motorcycles</a></li>
+              <li><a class="dropdown-item" href="#">Bicycles</a></li>
+              <li><a class="dropdown-item" href="#">Spare Parts</a></li>
+              <li><a class="dropdown-item" href="#">Bike accessories</a></li>
+              <li><a class="dropdown-item" href="#">Scooter</a></li>
+              <li><a class="dropdown-item" href="#">ATV & Quads</a></li>
+            </ul>
+
+            <ul class="job-category">
+              <li><a class="dropdown-item h6" href="#">Jobs</a></li>
+              <li><a class="dropdown-item" href="#">Online</a></li>
+              <li><a class="dropdown-item" href="#">Other Jobs</a></li>
+              <li><a class="dropdown-item" href="#">Education</a></li>
+              <li><a class="dropdown-item " href="#">Part Time</a></li>
+              <li><a class="dropdown-item " href="#">Content Writing</a></li>
+              <li><a class="dropdown-item " href="#">Sales</a></li>
+              <li><a class="dropdown-item " href="#">Marketing</a></li>
+              <li><a class="dropdown-item " href="#">Restaurants & Hospitality</a></li>
+              <li><a class="dropdown-item " href="#">Customer Service</a></li>
+              <li><a class="dropdown-item " href="#">Domestic Staff </a></li>
+              <li><a class="dropdown-item " href="#">Medical</a></li>
+              <li><a class="dropdown-item " href="#">Accounting & Finance</a></li>
+              <li><a class="dropdown-item " href="#">It & Networking</a></li>
+              <li><a class="dropdown-item " href="#">Graphic Design</a></li>
+              <li><a class="dropdown-item " href="#">Delivery Riders</a></li>
+              <li><a class="dropdown-item " href="#">Hotels & Tourism</a></li>
+              <li><a class="dropdown-item " href="#">Security</a></li>
+              <li><a class="dropdown-item " href="#">Clerical & Administration</a></li>
+              <li><a class="dropdown-item " href="#">Engineering</a></li>
+              <li><a class="dropdown-item " href="#">Manufacturing</a></li>
+              <li><a class="dropdown-item " href="#">Human Resources</a></li>
+              <li><a class="dropdown-item " href="#">Advertising & PR</a></li>
+              <li><a class="dropdown-item " href="#">Real Estate</a></li>
+              <li><a class="dropdown-item " href="#">Internships</a></li>
+              <li><a class="dropdown-item " href="#">Architecture & Interior Design</a></li>
+            </ul>
+            <ul class="furniture-category">
+              <li><a class="dropdown-item h6" href="#">Furniture & Home Decor</a></li>
+              <li><a class="dropdown-item" href="#">Sofa & Chairs</a></li>
+              <li><a class="dropdown-item" href="#">Beds & Wardrobe</a></li>
+              <li><a class="dropdown-item" href="#">Other Household Items</a></li>
+              <li><a class="dropdown-item " href="#">Tables & Dining</a></li>
+              <li><a class="dropdown-item " href="#">Home Decoration</a></li>
+              <li><a class="dropdown-item " href="#">Office Furniture</a></li>
+              <li><a class="dropdown-item " href="#">Garden & Outdoor</a></li>
+              <li><a class="dropdown-item " href="#">Painting & Mirrors</a></li>
+              <li><a class="dropdown-item " href="#">Curtains & Blinds</a></li>
+              <li><a class="dropdown-item " href="#">Rugs & Carpet</a></li>
+              <li><a class="dropdown-item " href="#">Bathroom Accessories</a></li>
+            </ul>
+            <ul class="vehicle-category">
+              <li><a class="dropdown-item h6" href="#">Vehicles</a></li>
+              <li><a class="dropdown-item" href="#">Car</a></li>
+              <li><a class="dropdown-item" href="#">Car Accessories</a></li>
+              <li><a class="dropdown-item" href="#">Spare Parts</a></li>
+              <li><a class="dropdown-item " href="#">Buses, Vans & Trucks</a></li>
+              <li><a class="dropdown-item " href="#">Rickshaw & Chingchi</a></li>
+              <li><a class="dropdown-item " href="#">Tractors & Trailors</a></li>
+              <li><a class="dropdown-item " href="#">Cars on Installments</a></li>
+              <li><a class="dropdown-item " href="#">Other Vehicles</a></li>
+              <li><a class="dropdown-item" href="#">Boats</a></li>
+            </ul>
+            <ul class="business-category">
+              <li><a class="dropdown-item h6" href="#">Business, Industrial & Agriculture</a></li>
+              <li><a class="dropdown-item" href="#">Other Business & Industry</a></li>
+              <li><a class="dropdown-item" href="#">Food & Restaurants</a></li>
+              <li><a class="dropdown-item" href="#">Trade & Industrial Machinery</a></li>
+              <li><a class="dropdown-item " href="#">Medical & Pharma</a></li>
+              <li><a class="dropdown-item " href="#">Business for Sale</a></li>
+              <li><a class="dropdown-item " href="#">Construction & Heavy Machinery</a></li>
+              <li><a class="dropdown-item " href="#">Agriculture</a></li>
+            </ul>
+            <ul class="fashion-category">
+              <li><a class="dropdown-item h6" href="#">Fashion & Beauty</a></li>
+              <li><a class="dropdown-item" href="#">Clothes</a></li>
+              <li><a class="dropdown-item" href="#">Watches</a></li>
+              <li><a class="dropdown-item" href="#">Wedding</a></li>
+              <li><a class="dropdown-item " href="#">Footwear</a></li>
+              <li><a class="dropdown-item " href="#">Skin & Hair</a></li>
+              <li><a class="dropdown-item " href="#">Jewellery</a></li>
+              <li><a class="dropdown-item " href="#">Bags</a></li>
+              <li><a class="dropdown-item " href="#">Fragrance</a></li>
+              <li><a class="dropdown-item " href="#">Makeup</a></li>
+              <li><a class="dropdown-item " href="#">Fashion Accessories</a></li>
+              <li><a class="dropdown-item " href="#">Other Fashion</a></li>
+            </ul>
+            <ul class="sale-category">
+              <li><a class="dropdown-item h6" href="#">Property For Sale</a></li>
+              <li><a class="dropdown-item" href="#">Land & Plot</a></li>
+              <li><a class="dropdown-item" href="#">Houses</a></li>
+              <li><a class="dropdown-item" href="#">Apartment & Flats</a></li>
+              <li><a class="dropdown-item " href="#">Shops-Offices-Commercial Space</a></li>
+              <li><a class="dropdown-item " href="#">Portions & Floors</a></li>
+            </ul>
+            <ul class="service-category">
+              <li><a class="dropdown-item h6" href="#">Services</a></li>
+              <li><a class="dropdown-item" href="#">Other Services</a></li>
+              <li><a class="dropdown-item" href="#">Tuitions & Academies</a></li>
+              <li><a class="dropdown-item" href="#">Home & Office Repair</a></li>
+              <li><a class="dropdown-item " href="#">Domestic Help</a></li>
+              <li><a class="dropdown-item " href="#">Car Rental</a></li>
+              <li><a class="dropdown-item " href="#">Web Development</a></li>
+              <li><a class="dropdown-item " href="#">Movers & Packers</a></li>
+              <li><a class="dropdown-item " href="#">Travel & Visa</a></li>
+              <li><a class="dropdown-item " href="#">Electronics & Computer Repair</a></li>
+              <li><a class="dropdown-item " href="#">Consultancy Services</a></li>
+              <li><a class="dropdown-item " href="#">Health & Beauty</a></li>
+              <li><a class="dropdown-item " href="#">Drivers & Taxi</a></li>
+              <li><a class="dropdown-item " href="#">Construction Services</a></li>
+              <li><a class="dropdown-item " href="#">Farm & Fresh Food</a></li>
+              <li><a class="dropdown-item " href="#">Event Services</a></li>
+              <li><a class="dropdown-item " href="#">Architecture & Interior Design</a></li>
+              <li><a class="dropdown-item " href="#">Video & Photography</a></li>
+              <li><a class="dropdown-item " href="#">Renting Services</a></li>
+              <li><a class="dropdown-item " href="#">Camera Installation</a></li>
+              <li><a class="dropdown-item " href="#">Tailor Services</a></li>
+              <li><a class="dropdown-item " href="#">Catering & Restaurants</a></li>
+              <li><a class="dropdown-item " href="#">Car Services</a></li>
+              <li><a class="dropdown-item " href="#">Insurance Services</a></li>
+
+            </ul>
+            <ul class="rent-category">
+              <li><a class="dropdown-item h6" href="#">Property for Rent</a></li>
+              <li><a class="dropdown-item" href="#">Houses</a></li>
+              <li><a class="dropdown-item" href="#">Portions & Floors</a></li>
+              <li><a class="dropdown-item" href="#">Apartments & Flats</a></li>
+              <li><a class="dropdown-item " href="#">Shops-Offices-Commercial Space Rooms</a></li>
+              <li><a class="dropdown-item " href="#">Vacation Rentals-Guest Houses</a></li>
+              <li><a class="dropdown-item " href="#">Roommates & Paying Guests</a></li>
+              <li><a class="dropdown-item " href="#">Land & Plot</a></li>
+            </ul>
+            <ul class="animal-category">
+              <li><a class="dropdown-item h6" href="#">Animals</a></li>
+              <li><a class="dropdown-item" href="#">Hens</a></li>
+              <li><a class="dropdown-item" href="#">Parrots</a></li>
+              <li><a class="dropdown-item" href="#">Cats</a></li>
+              <li><a class="dropdown-item " href="#">Dogs</a></li>
+              <li><a class="dropdown-item " href="#">Pet Food & Accessories</a></li>
+              <li><a class="dropdown-item " href="#">Pigeons</a></li>
+              <li><a class="dropdown-item " href="#">Livestock</a></li>
+              <li><a class="dropdown-item " href="#">Finches</a></li>
+              <li><a class="dropdown-item " href="#">Other Birds</a></li>
+              <li><a class="dropdown-item " href="#">Rabbits</a></li>
+              <li><a class="dropdown-item " href="#">Fish</a></li>
+              <li><a class="dropdown-item " href="#">Ducks</a></li>
+              <li><a class="dropdown-item " href="#">Doves</a></li>
+              <li><a class="dropdown-item " href="#">Fertile Eggs</a></li>
+              <li><a class="dropdown-item " href="#">Peacocks</a></li>
+              <li><a class="dropdown-item " href="#">Other Animals</a></li>
+              <li><a class="dropdown-item " href="#">Horses</a></li>
+            </ul>
+            <ul class="book-category">
+              <li><a class="dropdown-item h6" href="#">Books, Sports & Hobbies</a></li>
+              <li><a class="dropdown-item" href="#">Other Hobbies</a></li>
+              <li><a class="dropdown-item" href="#">Gym & Fitness</a></li>
+              <li><a class="dropdown-item" href="#">Sports equipment</a></li>
+              <li><a class="dropdown-item " href="#">Books & Magazines</a></li>
+              <li><a class="dropdown-item " href="#">Musical Instruments</a></li>
+            </ul>
+            <ul class="kid-category">
+              <li><a class="dropdown-item h6" href="#">Kids</a></li>
+              <li><a class="dropdown-item" href="#">Toys</a></li>
+              <li><a class="dropdown-item" href="#">Kids Vehicles</a></li>
+              <li><a class="dropdown-item" href="#">Baby Gear</a></li>
+              <li><a class="dropdown-item " href="#">Kids Furniture</a></li>
+              <li><a class="dropdown-item " href="#">Swings & Slides</a></li>
+              <li><a class="dropdown-item " href="#">Kids Clothing</a></li>
+              <li><a class="dropdown-item " href="#">Bath & Diapers</a></li>
+            </ul>
+            <ul class="electronic-category">
+              <li><a class="dropdown-item h6" href="#">Electronics & Home Appliances</a></li>
+              <li><a class="dropdown-item" href="#">Computers & Accessories</a></li>
+              <li><a class="dropdown-item" href="#">Telivision & Accessories</a></li>
+              <li><a class="dropdown-item" href="#">AC & Coolers</a></li>
+              <li><a class="dropdown-item " href="#">Generators, UPS & Power Solution</a></li>
+              <li><a class="dropdown-item " href="#">Refrigerators & Freezers</a></li>
+              <li><a class="dropdown-item " href="#">Cameras & Accessories</a></li>
+              <li><a class="dropdown-item " href="#">Other Home Appliances</a></li>
+              <li><a class="dropdown-item " href="#">Games & Entertainment</a></li>
+              <li><a class="dropdown-item " href="#">Kitchen Appliances</a></li>
+              <li><a class="dropdown-item " href="#">Video-Audios</a></li>
+              <li><a class="dropdown-item " href="#">Fans</a></li>
+              <li><a class="dropdown-item " href="#">Wasing Machines & Dryers</a></li>
+              <li><a class="dropdown-item " href="#">Microwaves & Ovens</a></li>
+              <li><a class="dropdown-item " href="#">Sewing Machines</a></li>
+              <li><a class="dropdown-item " href="#">Water Dispensers</a></li>
+              <li><a class="dropdown-item " href="#">Heaters & Geysers</a></li>
+              <li><a class="dropdown-item " href="#">Irons & Steamers</a></li>
+              <li><a class="dropdown-item " href="#">Air Purifiers & Humidifiers</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- CATEGORIES DROPDOWN END -->
+      <!-- NAVBAR START -->
+      <div class="navbar">
+        <ul>
+          <li class="d-inline"><a class="link" href="#mobile-card">Mobile Phones</a></li>
+          <li class="d-inline"><a class="link" href="#car-card">Cars</a></li>
+          <li class="d-inline"><a class="link" href="#bike-card">Motorcycles</a></li>
+          <li class="d-inline"><a class="link" href="#house-card">Houses</a></li>
+          <li class="d-inline"><a class="link" href="#tablet-card">Tablets</a></li>
+          <li class="d-inline"><a class="link" href="#plot-card">Land & Plots</a></li>
+          <li class="d-inline"><a class="link" href="#job-card">Jobs</a></li>
+        </ul>
+      </div>
+      <!-- NAVBAR END -->
+    </div>
+    <!-- NAV SECTION END -->
+    <!-- HEADER IMAGE START -->
+    <div class="header-img">
+      <img src="header-section-img.webp" alt="header section image">
+    </div>
+
+    <!-- HEADER END -->
+    <!-- CATEGORIES SECTION START -->
+    <div class="categories-section">
+      <h3 class="ms-4 ps-2 mt-5" style="font-size: 23px; font-weight: bold;">All categories</h3>
+      <div class="categories ">
+        <a><img src="mobile-category.png" alt="mobile-category-image">
+          <h6>Mobiles</h6>
+        </a>
+        <a><img src="vehicle-category.png" alt="vehicle-category-image">
+          <h6>Vehicles</h6>
+        </a>
+        <a><img src="sale property-category.png" alt="sale-property-category-image">
+          <h6>Propety for sale</h6>
+        </a>
+        <a><img src="rent property-category.png" alt="rent-property-category-image">
+          <h6>Property for Rent</h6>
+        </a>
+        <a><img src="electronics-category.png" alt="electronic-category-image">
+          <h6>Electronics & Home Appliances</h6>
+        </a>
+        <a><img src="bike-category.png" alt="bike-category-image">
+          <h6>Bike</h6>
+        </a>
+        <a><img src="business-category.png" alt="business-category-image">
+          <h6>Business, Industrial & Agriculture</h6>
+        </a>
+        <a><img src="services-category.png" alt="services-category-image">
+          <h6>Services</h6>
+        </a>
+        <a><img src="job-category.png" alt="job-category-image">
+          <h6>Jobs</h6>
+        </a>
+        <a><img src="animal-category copy.png" alt="animal-category-image">
+          <h6>Animals</h6>
+        </a>
+        <a><img src="furniture-category.png" alt="furniture-category-image">
+          <h6>Furniture & Home Decor</h6>
+        </a>
+        <a><img src="fashion-category.png" alt="fashion-category-image">
+          <h6>Fashion & Beauty</h6>
+        </a>
+        <a><img src="book-category.png" alt="book-category-image">
+          <h6>Books, Sports & Hobbies</h6>
+        </a>
+        <a><img src="kids-category.png" alt="kids-category-image">
+          <h6>Kids</h6>
+        </a>
+      </div>
+    </div>
+    <!-- CATEGORIES SECTION END -->
+    <!-- MOBILE CARD SECTION START -->
+    <div class="mobile-card" id="mobile-card">
+      <div class="card-information">
+        <h4>Mobile Phones</h4>
+        <button class="viewmore-button">View more <img src="right arrow icon.png" alt="rightArrow-icon"></button>
+      </div>
+      <!--  CARDS START -->
+      <div class=" cards-section mx-4 ms-4 px-2 row pt-2 ">
+        <!-- CARD NO 1 -->
+        <div class="card mx-3" style="width: 18rem; height: 26rem;">
+          <img src="ipone 15.webp" class="card-img-top" alt="iphone 15 png">
+          <div class="card-body">
+            <h5 class="card-title">Rs 34,500 <img src="heart icon.png" alt="heart-icon"></h5>
+            <p class="card-text">Iphone 15 pro max | 128GB | Factory Unlocked</p>
+            <p>Gulistan-e-Jauhar Block 14, Karachi</p>
+            <p>4 days ago</p>
+          </div>
+        </div>
+
+        <!-- CARD NO 2 -->
+        <div class="card mx-3" style="width: 18rem; height: 26rem;">
+          <img src="iphone 12 pro max.webp" class="card-img-top" alt="iphone 12 pro max img">
+          <div class="card-body">
+            <h5 class="card-title">Rs 59,000 <img src="heart icon.png" alt="heart-icon"></h5>
+            <p class="card-text">
+              iPhone 12 pro max 64GB - Black - 10/10 Condition - Non-PTA</p>
+            <p>Gulberg 2, Lahore</p>
+            <p>2 weeks ago</p>
+          </div>
+        </div>
+
+        <!-- CARD NO 3 -->
+        <div class="card mx-3" style="width: 18rem; height: 26rem;">
+          <img src="oppo F11 card.jpg" class="card-img-top" alt="oppo card image">
+          <div class="card-body">
+            <h5 class="card-title">Rs 19,500 <img src="heart icon.png" alt="heart-icon"></h5>
+            <p class="card-text">Oppo F11 (8GB-256GB) PTA approved big offer</p>
+            <p>Satellite Town, Rawalpindi</p>
+            <p>3 weeks ago</p>
+          </div>
+        </div>
+
+        <!-- CARD NO 4 -->
+        <div class="card mx-3" style="width: 18rem; height: 26rem;">
+          <img src="iphone mx.webp" class="card-img-top" alt="iphone mx image">
+          <div class="card-body">
+            <h5 class="card-title">Rs 50,999 <img src="heart icon.png" alt="heart-icon"></h5>
+            <p class="card-text">iphone xs max 64 and 256</p>
+            <p>DHA Defence, Lahore</p>
+            <p>1 week ago</p>
+          </div>
+        </div>
+
+      </div>
+      <!-- CARDS END -->
+    </div>
+    <!-- MOBILE CARDS SECTION END -->
+
+    <!-- CARS CARDS SECTION START -->
+    <div class="car-card" id="car-card">
+      <div class="card-information">
+        <h4>Cars</h4>
+        <button class="viewmore-button">View more <img src="right arrow icon.png" alt="rightArrow-icon"></button>
+      </div>
+      <!--  CARDS START -->
+      <div class=" cards-section mx-4 ms-4 px-2 row pt-2 ">
+        <!-- CARD NO 1 -->
+        <div class="card mx-3" style="width: 18rem; height: 21.5rem;">
+          <img src="honda civic card.webp" class="card-img-top" alt="honda card image">
+          <div class="card-body">
+            <h5 class="card-title">Rs 2,600,000 <img src="heart icon.png" alt="heart-icon"></h5>
+            <p class="card-text">Honda Civic VTI Oriel Prosmatec 2009</p>
+            <p>Valencia Town, Lahore</p>
+            <p>3 week ago</p>
+          </div>
+        </div>
+
+        <!-- CARD NO 2 -->
+        <div class="card mx-3" style="width: 18rem; height: 21.5rem;">
+          <img src="toyota c-hr card.webp" class="card-img-top" alt="toyota card image">
+          <div class="card-body">
+            <h5 class="card-title">Rs 7,900,000 <img src="heart icon.png" alt="heart-icon"></h5>
+            <p class="card-text">Toyota C-HR G-LED 2017</p>
+            <p>Ghauri Town, Islamabad</p>
+            <p>1 day ago</p>
+          </div>
+        </div>
+
+        <!-- CARD NO 3 -->
+        <div class="card mx-3" style="width: 18rem; height: 21.5rem;">
+          <img src="suzuki img.webp" width="10px" height="180px" class="card-img-top" alt="suzuki card image">
+          <div class="card-body">
+            <h5 class="card-title">Rs 2,650,000<img src="heart icon.png" alt="heart-icon"></h5>
+            <p class="card-text"> Suzuki Every 2019n</p>
+            <p>Thokar Niaz Baig, Lahore</p>
+            <p>1 day ago</p>
+          </div>
+        </div>
+
+        <!-- CARD NO 4 -->
+        <div class="card mx-3" style="width: 18rem; height: 21.5rem;">
+          <img src="honda fit.webp" class="card-img-top" width="10px" height="180px" alt="honda fit img">
+          <div class="card-body">
+            <h5 class="card-title">Rs 3,800,000 <img src="heart icon.png" alt="heart-icon"></h5>
+            <p class="card-text">Honda Fit 2012</p>
+            <p>Satellite Town, Sargodha</p>
+            <p>1 wee kago</p>
+          </div>
+        </div>
+
+      </div>
+      <!-- CARDS END -->
+    </div>
+    <!-- CARS CARDS SECTION END -->
+
+    <!-- BIKE CARDS SECTION START -->
+    <div class="bike-card" id="bike-card">
+      <div class="card-information">
+        <h4>Bikes & Motorcycles</h4>
+        <button class="viewmore-button">View more <img src="right arrow icon.png" alt="rightArrow-icon"></button>
+      </div>
+      <!--  CARDS START -->
+      <div class=" cards-section mx-4 ms-4 px-2 row pt-2 ">
+        <!-- CARD NO 1 -->
+        <div class="card mx-3" style="width: 18rem; height: 23rem;">
+          <img src="heavy bike card.webp" class="card-img-top" alt=" bike card image">
+          <div class="card-body">
+            <h5 class="card-title">Rs 1,250,000<img src="heart icon.png" alt="heart-icon"></h5>
+            <p class="card-text">chopper 400cc water cool engine</p>
+            <p>2 weeks ago</p>
+          </div>
+        </div>
+
+        <!-- CARD NO 2 -->
+        <div class="card mx-3" style="width: 18rem; height: 23rem;">
+          <img src="bike 123.webp" class="card-img-top" height="300px" width="20px" alt="bike card image">
+          <div class="card-body">
+            <h5 class="card-title">Rs 160,000 <img src="heart icon.png" alt="heart-icon"></h5>
+            <p class="card-text">Honda Pridor Bike 2021 </p>
+            <p>Cantt, Lahore</p>
+            <p>22 hours ago</p>
+          </div>
+        </div>
+
+        <!-- CARD NO 3 -->
+        <div class="card mx-3" style="width: 18rem; height: 23rem;">
+          <img src="150 bike card.PNG" class="card-img-top" alt="150 card image">
+          <div class="card-body">
+            <h5 class="card-title">Rs 1,250,000<img src="heart icon.png" alt="heart-icon"></h5>
+            <p class="card-text">BMW s1000 RR in very beautiful colours available in discounted price</p>
+            <p>McLeod Road, Lahore</p>
+            <p>5 days ago</p>
+          </div>
+        </div>
+
+        <!-- CARD NO 4 -->
+        <div class="card mx-3" style="width: 18rem; height: 23rem;">
+          <img src="yamaha bike card.PNG" class="card-img-top" alt="yamaha card image">
+          <div class="card-body">
+            <h5 class="card-title">Rs 280,000 <img src="heart icon.png" alt="heart-icon"></h5>
+            <p class="card-text">Yamaha YBR 125G 2017</p>
+            <p>Cantt, Rawalpindi</p>
+            <p>9 hours ago</p>
+          </div>
+        </div>
+
+      </div>
+      <!-- CARDS END -->
+    </div>
+    <!-- BIKE CARDS SECTION END -->
+
+    <!-- HOUSES CARDS SECTION START -->
+    <div class="house-card" id="house-card">
+      <div class="card-information">
+        <h4>Houses</h4>
+        <button class="viewmore-button">View more <img src="right arrow icon.png" alt="rightArrow-icon"></button>
+      </div>
+      <!--  CARDS START -->
+      <div class=" cards-section mx-4 ms-4 px-2 row pt-2 ">
+        <!-- CARD NO 1 -->
+        <div class="card mx-3" style="width: 18rem; height: 22rem;">
+          <img src="punjab house card.PNG" class="card-img-top" alt="punjab house card image">
+          <div class="card-body">
+            <h5 class="card-title">Rs 12,500,000 <img src="heart icon.png" alt="heart-icon"></h5>
+            <p class="card-text">3 Years Installments Plan House For Sale In Park View City</p>
+            <p>Park View Villas, Lahore</p>
+            <p>6 days ago</p>
+          </div>
+        </div>
+
+        <!-- CARD NO 2 -->
+        <div class="card mx-3" style="width: 18rem; height: 22rem;">
+          <img src="karachi house card.PNG" class="card-img-top" alt="karachi house card image">
+          <div class="card-body">
+            <h5 class="card-title">Rs 43,000,000 <img src="heart icon.png" alt="heart-icon"></h5>
+            <p class="card-text">With Basement 5 Beds Modern design House </p>
+            <p>DHA Phase 4, Karachi</p>
+            <p>2 weeks ago</p>
+          </div>
+        </div>
+
+        <!-- CARD NO 3 -->
+        <div class="card mx-3" style="width: 18rem; height: 22rem;">
+          <img src="taxila house card.PNG" class="card-img-top" alt="taxila card image">
+          <div class="card-body">
+            <h5 class="card-title">Rs 18,000,000 <img src="heart icon.png" alt="heart-icon"></h5>
+            <p class="card-text">5 Marla Designer House with Modern Elevation</p>
+            <p>Faisal Hills, Taxila</p>
+            <p>14 hours ago</p>
+          </div>
+        </div>
+
+        <!-- CARD NO 4 -->
+        <div class="card mx-3" style="width: 18rem; height: 22rem;">
+          <img src="lahore house card.PNG" class="card-img-top" alt="lahore card image">
+          <div class="card-body">
+            <h5 class="card-title">Rs 9,500,000 <img src="heart icon.png" alt="heart-icon"></h5>
+            <p class="card-text">Double Storb 4 Marla Corner House With Modern Kitchen</p>
+            <p>Ferozepur Road, Lahore</p>
+            <p>1 week ago</p>
+          </div>
+        </div>
+
+      </div>
+      <!-- CARDS END -->
+    </div>
+    <!-- HOUSES CARDS SECTION END -->
+
+    <!-- TABLETS CARDS SECTION START -->
+    <div class="tablet-card" id="tablet-card">
+      <div class="card-information">
+        <h4>Tablets</h4>
+        <button class="viewmore-button">View more <img src="right arrow icon.png" alt="rightArrow-icon"></button>
+      </div>
+      <!--  CARDS START -->
+      <div class=" cards-section mx-4 ms-4 px-2 row pt-2 ">
+        <!-- CARD NO 1 -->
+        <div class="card mx-3" style="width: 18rem; height: 23rem;">
+          <img src="samsung tab card.webp" class="card-img-top" alt="samsung tab card image">
+          <div class="card-body">
+            <h5 class="card-title">Rs 7,999 <img src="heart icon.png" alt="heart-icon"></h5>
+            <p class="card-text">Samsung Gaming Tabs for Kids</p>
+            <p>Gulberg 3, Lahore</p>
+            <p>2 weeks ago</p>
+          </div>
+        </div>
+
+        <!-- CARD NO 2 -->
+        <div class="card mx-3" style="width: 18rem; height: 23rem;">
+          <img src="lenovo tab card.PNG" class="card-img-top" alt="lenovo tab card image">
+          <div class="card-body">
+            <h5 class="card-title">Rs 48,999 <img src="heart icon.png" alt="heart-icon"></h5>
+            <p class="card-text">Lenovo Tab P11 Pro 2nd Gen 6/128 8/256 GB </p>
+            <p>Johar Town, Lahore</p>
+            <p>2 weeks ago</p>
+          </div>
+        </div>
+
+        <!-- CARD NO 3 -->
+        <div class="card mx-3" style="width: 18rem; height: 23rem;">
+          <img src="ipad tab card.PNG" class="card-img-top" alt="ipad tab card image">
+          <div class="card-body">
+            <h5 class="card-title">Rs 167,999 <img src="heart icon.png" alt="heart-icon"></h5>
+            <p class="card-text">ipad pro m1 chip 512gb 3rd generation 2021</p>
+            <p>DHA, Karachi</p>
+            <p>2 weeks ago</p>
+          </div>
+        </div>
+
+        <!-- CARD NO 4 -->
+        <div class="card mx-3" style="width: 18rem; height: 23rem;">
+          <img src="apple tab card.webp" class="card-img-top" alt="apple tab card image">
+          <div class="card-body">
+            <h5 class="card-title">Rs 205,000 <img src="heart icon.png" alt="heart-icon"></h5>
+            <p class="card-text">Apple Ipad Pro 4, Pro 6. M2 Chip.</p>
+            <p>Hall Road, Lahore</p>
+            <p>3 weeks ago</p>
+          </div>
+        </div>
+
+      </div>
+      <!-- CARDS END -->
+    </div>
+    <!-- TABLETS CARDS SECTION END -->
+
+    <!-- PLOTS CARDS SECTION START -->
+    <div class="plot-card" id="plot-card">
+      <div class="card-information">
+        <h4>Lands & Plots</h4>
+        <button class="viewmore-button">View more <img src="right arrow icon.png" alt="rightArrow-icon"></button>
+      </div>
+      <!--  CARDS START -->
+      <div class=" cards-section mx-4 ms-4 px-2 row pt-2 ">
+        <!-- CARD NO 1 -->
+        <div class="card mx-3" style="width: 18rem; height: 20rem;">
+          <img src="lahore plot card.webp" class="card-img-top" alt="lahore plot card image">
+          <div class="card-body">
+            <h5 class="card-title">Rs 6,450,000 <img src="heart icon.png" alt="heart-icon"></h5>
+            <p class="card-text">1 Kanal Plot For Sale On Easy Installments Plan</p>
+            <p>Etihad Town, Lahore</p>
+            <p>5 days ago</p>
+          </div>
+        </div>
+
+        <!-- CARD NO 2 -->
+        <div class="card mx-3" style="width: 18rem; height: 20rem;">
+          <img src="sukkar plot card.PNG" class="card-img-top" alt="sukkar plot card image">
+          <div class="card-body">
+            <h5 class="card-title">Rs 8,000,000 <img src="heart icon.png" alt="heart-icon"></h5>
+            <p class="card-text">3 Marla Plot File For Sale In Residential Area </p>
+            <p>Khairpur, Sukkar</p>
+            <p>1 week ago</p>
+          </div>
+        </div>
+
+        <!-- CARD NO 3 -->
+        <div class="card mx-3" style="width: 18rem; height: 20rem;">
+          <img src="karachi plot card.PNG" class="card-img-top" alt="karachi plot card image">
+          <div class="card-body">
+            <h5 class="card-title">Rs 14,000,000 <img src="heart icon.png" alt="heart-icon"></h5>
+            <p class="card-text">240 Yards Plot With A Best Location</p>
+            <p>Gulshan e Maymar, Karachi</p>
+            <p>22 hours ago</p>
+          </div>
+        </div>
+
+        <!-- CARD NO 4 -->
+        <div class="card mx-3" style="width: 18rem; height: 20rem;">
+          <img src="hyderabad plot card.PNG" class="card-img-top" alt="hyderabad plot card image">
+          <div class="card-body">
+            <h5 class="card-title">Rs 5,200,000 <img src="heart icon.png" alt="heart-icon"></h5>
+            <p class="card-text">Residential Plot Of 120 Yard In A Good Area</p>
+            <p>Latif Abad, Hyderabad</p>
+            <p>4 weeks ago</p>
+          </div>
+        </div>
+
+      </div>
+      <!-- CARDS END -->
+    </div>
+    <!-- PLOTS CARDS SECTION END -->
+
+    <!-- JOBS CARDS SECTION START -->
+    <div class="job-card" id="job-card">
+      <div class="card-information">
+        <h4>Jobs</h4>
+        <button class="viewmore-button">View more <img src="right arrow icon.png" alt="rightArrow-icon"></button>
+      </div>
+      <!--  CARDS START -->
+      <div class=" cards-section mx-4 ms-4 px-2 row pt-2 ">
+        <!-- CARD NO 1 -->
+        <div class="card mx-3" style="width: 18rem; height: 20rem;">
+          <img src="c:\Users\cash\Desktop\olx clone\islamia.jpg" class="card-img-top" alt="teacher card image">
+          <div class="card-body">
+            <h5 class="card-title">Rs 20,000/month <img src="heart icon.png" alt="heart-icon"></h5>
+            <p class="card-text">Science & English teacher required for middle nd secndry</p>
+            <p>Model City 1, Karachi</p>
+            <p>6 days ago</p>
+          </div>
+        </div>
+
+        <!-- CARD NO 2 -->
+        <div class="card mx-3" style="width: 18rem; height: 20rem;">
+          <img src="content writer job card.webp" class="card-img-top" alt="content writer card image">
+          <div class="card-body">
+            <h5 class="card-title">Rs 12,000/month <img src="heart icon.png" alt="heart-icon"></h5>
+            <p class="card-text">Hiring a Creative Content Writer & Facebook Expert </p>
+            <p>Samnabad, Karachi</p>
+            <p>3 weeks ago</p>
+          </div>
+        </div>
+
+        <!-- CARD NO 3 -->
+        <div class="card mx-3" style="width: 18rem; height: 20rem;">
+          <img src="job   img.webp" class="card-img-top" height="150px">
+          <div class="card-body">
+            <h5 class="card-title">Rs 15,000/month <img src="heart icon.png" alt="heart-icon"></h5>
+            <p class="card-text">Accountant / Digital Marketer Job </p>
+            <p>Peshawar Road, Rawalpindi</p>
+            <p>3 weeks ago</p>
+          </div>
+        </div>
+
+        <!-- CARD NO 4 -->
+        <div class="card mx-3" style="width: 18rem; height: 20rem;">
+          <img src="assignment job card.PNG" class="card-img-top" alt="assignment card image">
+          <div class="card-body">
+            <h5 class="card-title">Rs 10,000/month <img src="heart icon.png" alt="heart-icon"></h5>
+            <p class="card-text">Urgent Requirement for Hand Written Assignments </p>
+            <p>Latif Abad, Hyderabad</p>
+            <p>1 week ago</p>
+          </div>
+        </div>
+
+      </div>
+      <!-- CARDS END -->
+    </div>
+
+    <div>
+      <img src="dynamic.png" class="dynamic ">
+    </div>
+
+
+    <!-- JOBS CARDS SECTION END   -->
+    <!-- GETAPP INFORMATION SECTION START  -->
+    <div class="getApp-section hstack gap-5">
+      <div class="trial-section">
+        <img src="getApp image.webp" alt="getApp image">
+        <div class="trial-information">
+          <h2>TRY THE OLX APP</h2>
+          <p>Buy, sell and find just about anything using the app on your mobile.</p>
+        </div>
+      </div>
+      <div class="vr my-auto"></div>
+      <div class="download-section">
+        <h6>GET YOUR APP TODAY</h6>
+        <div class="download-images">
+          <img src="app store image.svg" alt="appstore image">
+          <img src="google play image.svg" alt="google play image">
+          <img src="app gallery image.svg" alt="app gallery image">
+        </div>
+      </div>
+    </div>
+    <!-- GETAPP INFORMATION SECTION END -->
+
+    <!-- FOOTER START -->
+    <div class="footer">
+      <!-- FOOTER SECTION START -->
+      <div class="footer-section">
+        <!-- FOOTER ITEMS SECTION START -->
+        <div class="footer-items">
+          <ul>
+            <li class="item-heading">POPULAR CATEGORIES</li>
+            <li><a>Cars</a></li>
+            <li><a>Flats for Rent</a></li>
+            <li><a>Mobile Phones</a></li>
+            <li><a>Jobs</a></li>
+          </ul>
+          <ul>
+            <li class="item-heading">TRENDING SEARCHES</li>
+            <li><a>Bikes</a></li>
+            <li><a>Watches</a></li>
+            <li><a>Books</a></li>
+            <li><a>Dogs</a></li>
+          </ul>
+          <ul>
+            <li class="item-heading">ABOUT US</li>
+            <li><a>About Dubizzle Group</a></li>
+            <li><a>OLX Blog</a></li>
+            <li><a>Contact Us</a></li>
+            <li><a>OLX for Businesses</a></li>
+          </ul>
+          <ul>
+            <li class="item-heading">OLX</li>
+            <li><a>Help</a></li>
+            <li><a>Sitemap</a></li>
+            <li><a>Terms of Use</a></li>
+            <li><a>Privacy Policy</a></li>
+          </ul>
+
+        </div>
+        <!-- FOOTER ITEMS SECTION END -->
+
+        <!-- FOLLOW-US SECTION START -->
+        <div class="followUs-section ">
+          <h6>FOLLOW US</h6>
+          <div class="socialMedia-icons">
+            <img src="twitter-icon.svg" alt="twitter-icon">
+            <img src="facebook-icon.svg" alt="facebook-icon">
+            <img src="youtube-icon.svg" alt="youtube-icon">
+
+          </div>
+          <div class="download-images">
+            <img src="app store image.svg" alt="appstore image">
+            <img src="google play image.svg" alt="google play image">
+            <img src="app gallery image.svg" alt="app gallery image">
+          </div>
+        </div>
+        <!-- FOLLOW-US SECTION END -->
+      </div>
+      <!-- FOOTER SECTION END -->
+
+      <!-- BOTTOM SECTION START -->
+      <div class="bottom-section">
+        <p>Free Classifieds In Pakistan . <img src="copyright-icon.png" alt="copyright-icon"> 2006-2024 OLX</p>
+      </div>
+      <!-- BOTTOM SECTION END -->
+    </div>
+    <!-- FOOTER END -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>
